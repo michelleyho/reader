@@ -5,7 +5,7 @@ on:
       - master
       - github-actions-tutorial
   pull_request:
-    branche:
+    branches:
       - master
   workflow_call:
   workflow_dispatch:
@@ -24,4 +24,3 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
       - runs: python --version
-      
